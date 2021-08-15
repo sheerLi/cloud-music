@@ -31,6 +31,9 @@ export default defineComponent({
 
 <style lang="less" scoped>
 .wrap {
-  color: red;
+  font-size: 24px;
+  width: 375px;
+  height: 375px;
+  background-color: red;
 }
 </style>
