@@ -44,7 +44,7 @@ module.exports = {
       },
       {
         test: /\.less$/,
-        use: ["style-loader", "css-loader", "less-loader"],
+        use: ["style-loader", { loader: "css-loader", options: { importLoaders: 1 } }, "postcss-loader", "less-loader"],
       },
       {
         test: /\.(png|jpg|gif)$/i,
@@ -66,7 +66,7 @@ module.exports = {
     }),
     new CleanWebpackPlugin(),
     // 添加 VueLoaderPlugin 插件
-    new VueLoaderPlugin(),
+    new VueLoaderPlugin()
   ],
   resolve: {
     extensions: [".ts", ".tsx", ".js", ".jsx", ".json"],

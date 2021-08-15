@@ -1,13 +1,9 @@
 <template>
-  <Test :data="{ key: 'a', value: 'test' }" />
+  <router-view />
 </template>
 
 <script>
-import { Test } from './components';
 export default {
-  components: {
-    Test,
-  },
 };
 </script>
 

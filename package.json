@@ -15,6 +15,7 @@
     "@typescript-eslint/parser": "^4.29.1",
     "@vue/compiler-sfc": "^3.2.2",
     "@vuedx/typescript-plugin-vue": "^0.7.4",
+    "autoprefixer": "^10.3.1",
     "babel-loader": "^8.2.2",
     "clean-webpack-plugin": "^4.0.0-alpha.0",
     "css-loader": "^6.2.0",
@@ -28,6 +29,8 @@
     "less": "^4.1.1",
     "less-loader": "^10.0.1",
     "lint-staged": "^11.1.2",
+    "postcss-loader": "^6.1.1",
+    "postcss-px-to-viewport": "^1.1.1",
     "prettier": "^2.3.2",
     "style-loader": "^3.2.1",
     "ts-loader": "^9.2.5",
@@ -41,7 +44,8 @@
     "webpack-hot-middleware": "^2.25.0"
   },
   "dependencies": {
-    "vue": "^3.2.2"
+    "vue": "^3.2.2",
+    "vue-router": "^4.0.11"
   },
   "husky": {
     "hooks": {
@@ -54,5 +58,12 @@
       "eslint --cache --fix",
       "git add"
     ]
-  }
+  },
+  "browserslist": [
+    "last 2 versions",
+    "> 1%",
+    "iOS 7",
+    "last 3 iOS versions"
+  ]
+
 }
