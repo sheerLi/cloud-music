@@ -2,8 +2,11 @@
   <router-view />
 </template>
 
-<script>
+<script lang="ts">
 export default {
+  setup() {
+    console.log('App Vue');
+  },
 };
 </script>
 
