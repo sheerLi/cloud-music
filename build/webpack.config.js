@@ -40,11 +40,11 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ["style-loader", "css-loader"],
+        use: ["style-loader", "css-loader", "postcss-loader"],
       },
       {
         test: /\.less$/,
-        use: ["style-loader", { loader: "css-loader", options: { importLoaders: 1 } }, "postcss-loader", "less-loader"],
+        use: ["style-loader", "css-loader", "postcss-loader", "less-loader"],
       },
       {
         test: /\.(png|jpg|gif)$/i,
